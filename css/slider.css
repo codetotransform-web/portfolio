@@ -1,0 +1,19 @@
+#autoWidth{
+    display: flex;
+    list-style: none;
+}
+
+.item-a { width:200px; height: 25vh;background-color: aqua;}
+.item-b { width:340px; height: 25vh;background-color: aqua;}
+.item-c { width:290px; height: 25vh;background-color: aqua;}
+.item-d { width:220px; height: 25vh;background-color: aqua;}
+.item-e { width:350px; height: 25vh;background-color: aqua;}
+
+
+@media (max-width: 768px) {
+    .item-a { width:100px; }
+    .item-b { width:240px; }
+    .item-c { width:190px; }
+    .item-d { width:120px; }
+    .item-e { width:250px; }
+}

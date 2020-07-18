@@ -1,0 +1,70 @@
+.landing_anim {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    background: linear-gradient(-145deg ,rgba(0,0,0,0.75),rgba(0,0,0));
+    margin-bottom: 0;
+  }
+  
+  /* Width of the sphere */
+  .animation-wrapper {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  
+  .sphere-animation {
+    position: absolute;
+    top: 50%;
+    /* left: 50%;
+    right: 50%; */
+    width: 580px;
+    height: 580px;
+    margin: -290px 0 0 0;
+  }
+  
+  .sphere path {
+    fill: url(#sphereGradient);
+    stroke-width: 1px;
+    stroke: rgba(80,80,80,.35);
+    backface-visibility: hidden;
+  }
+  
+  @media screen and (max-width:760px){
+    
+    .landing_anim {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      border: 1px solid
+    }
+    
+    /* Width of the sphere */
+    .animation-wrapper {
+      width: 50%;
+      /* padding-bottom: 50%; */
+      position: relative;
+    }
+    .sphere-animation {
+      position: absolute;
+      top: 50%;
+      /* margin: auto; */
+      left: 50%;
+      width: 580px;
+      height: 580px;
+      margin: -290px 0 0 -290px;
+    }
+  }
+  
+  @media (min-width: 500px) {
+    .sphere path {
+      stroke-width: .4px;
+    }
+  }
